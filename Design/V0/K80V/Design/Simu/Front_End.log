@@ -1,0 +1,258 @@
+Circuit: * C:\Users\dbaudin\Documents_Local\Projet\BINGO\Implementation\Electronic\Tiny\K80V\Design\Simu\Front_End.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Gmin = 100
+Gmin = 10.7374
+vernier = 0.5
+vernier = 0.666667
+Gmin = 3.75229
+vernier = 0.888888
+vernier = 0.444444
+vernier = 0.222222
+Gmin = 1.0589
+vernier = 0.111111
+vernier = 0.0555555
+vernier = 0.0277778
+vernier = 0.0138889
+Gmin = 1.00897
+vernier = 0.00694444
+vernier = 0.00347222
+vernier = 0.00173611
+Gmin = 1.00374
+vernier = 0.000868055
+vernier = 0.000434028
+Gmin = 1.00178
+vernier = 0.000578703
+vernier = 0.000434027
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 1.70455%
+Source Step = 3.59848%
+Source Step = 5.49242%
+Source Step = 7.38636%
+Source Step = 9.2803%
+vernier = 0.09375
+Source Step = 11.9318%
+Source Step = 14.2756%
+vernier = 0.00585938
+Source Step = 14.2445%
+Source Step = 14.2889%
+Source Step = 14.3333%
+Source Step = 14.3777%
+Source Step = 14.4221%
+vernier = 0.00219727
+Source Step = 14.4731%
+Source Step = 14.5397%
+Source Step = 14.6063%
+Source Step = 14.6729%
+Source Step = 14.7394%
+vernier = 0.0032959
+Source Step = 14.8127%
+Source Step = 14.9126%
+Source Step = 15.0124%
+Source Step = 15.1123%
+Source Step = 15.2122%
+vernier = 0.00494385
+Source Step = 15.317%
+Source Step = 15.4669%
+Source Step = 15.6167%
+Source Step = 15.7665%
+Source Step = 15.9163%
+Source Step = 16.0661%
+vernier = 0.00741577
+Source Step = 16.2908%
+Source Step = 16.5156%
+Source Step = 16.7403%
+Source Step = 16.965%
+Source Step = 17.1897%
+vernier = 0.0111237
+Source Step = 17.5156%
+Source Step = 17.8526%
+Source Step = 18.1897%
+Source Step = 18.5268%
+Source Step = 18.8639%
+vernier = 0.0166855
+Source Step = 19.3358%
+Source Step = 19.8414%
+Source Step = 20.347%
+Source Step = 20.8527%
+Source Step = 21.3583%
+vernier = 0.0250282
+Source Step = 22.0409%
+Source Step = 22.7993%
+Source Step = 23.5577%
+Source Step = 24.3162%
+Source Step = 25.0746%
+vernier = 0.0375423
+Source Step = 26.0606%
+Source Step = 27.1982%
+Source Step = 28.3358%
+Source Step = 29.4735%
+Source Step = 30.6111%
+vernier = 0.0563135
+Source Step = 32.0332%
+Source Step = 33.7397%
+Source Step = 35.4461%
+Source Step = 37.1526%
+Source Step = 38.8591%
+vernier = 0.0844703
+Source Step = 40.9068%
+Source Step = 43.4666%
+Source Step = 44.4104%
+Source Step = 44.4464%
+Source Step = 44.4864%
+Source Step = 44.5264%
+Source Step = 44.5664%
+Source Step = 44.6064%
+vernier = 0.00197977
+Source Step = 44.6624%
+Source Step = 44.7224%
+Source Step = 44.7824%
+Source Step = 44.8424%
+Source Step = 44.9024%
+vernier = 0.00296966
+Source Step = 44.9834%
+Source Step = 45.0734%
+Source Step = 45.1634%
+Source Step = 45.2533%
+Source Step = 45.3433%
+vernier = 0.00445449
+Source Step = 45.4603%
+Source Step = 45.5953%
+Source Step = 45.7303%
+Source Step = 45.8653%
+Source Step = 46.0003%
+vernier = 0.00668173
+Source Step = 46.169%
+Source Step = 46.3715%
+Source Step = 46.5739%
+Source Step = 46.7764%
+Source Step = 46.9789%
+vernier = 0.0100226
+Source Step = 47.2219%
+Source Step = 47.5256%
+Source Step = 47.8293%
+Source Step = 48.133%
+Source Step = 48.4367%
+vernier = 0.0150339
+Source Step = 48.786%
+Source Step = 49.2416%
+Source Step = 49.6971%
+Source Step = 50.1527%
+Source Step = 50.6083%
+vernier = 0.0225508
+Source Step = 51.1094%
+vernier = 0.00563771
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0828598%
+Source Step = 0.201231%
+Source Step = 0.319602%
+Source Step = 0.437973%
+Source Step = 0.556345%
+vernier = 0.00585938
+Source Step = 0.710227%
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 22.3323 s.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:  d:u5:e_n:2  d:u5:e_n:1  d:u8:i_np:2  d:u8:i_np:1  d:u8:i_nn:2
+Model: u5:e_n:dvn  u5:e_n:dvn  u8:i_np:dvnf u8:i_np:dvnf u8:i_nn:dvnf
+Id:      1.00e-02    1.00e-02    1.00e-02     1.00e-02     1.00e-02
+Vd:      8.34e-01    8.34e-01    8.34e-01     8.34e-01     8.34e-01
+Req:     2.59e+00    2.59e+00    2.59e+00     2.59e+00     2.59e+00
+CAP:     0.00e+00    0.00e+00    0.00e+00     0.00e+00     0.00e+00
+
+Name:  d:u8:i_nn:1  d:u8:e_np:2 d:u8:e_np:1 d:u8:e_nn:2 d:u8:e_nn:1
+Model: u8:i_nn:dvnf u8:e_np:dvn u8:e_np:dvn u8:e_nn:dvn u8:e_nn:dvn
+Id:      1.00e-02     1.00e-02    1.00e-02    1.00e-02    1.00e-02
+Vd:      8.34e-01     8.34e-01    8.34e-01    8.34e-01    8.34e-01
+Req:     2.59e+00     2.59e+00    2.59e+00    2.59e+00    2.59e+00
+CAP:     0.00e+00     0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:  d:u8:e_n3:2 d:u8:e_n3:1 d:u7:e_n:2  d:u7:e_n:1  d:u6:e_n:2
+Model: u8:e_n3:dvn u8:e_n3:dvn u7:e_n:dvn  u7:e_n:dvn  u6:e_n:dvn
+Id:      1.00e-02    1.00e-02    1.00e-02    1.00e-02    1.00e-02
+Vd:      8.34e-01    8.34e-01    8.34e-01    8.34e-01    8.34e-01
+Req:     2.59e+00    2.59e+00    2.59e+00    2.59e+00    2.59e+00
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:  d:u6:e_n:1    d:u3:n2     d:u3:n1     d:u3:6      d:u3:5
+Model: u6:e_n:dvn    u3:dn1      u3:dn1       u3:dx       u3:dx
+Id:      1.00e-02    2.08e-05    2.08e-05    4.15e-10    4.14e-10
+Vd:      8.34e-01    5.55e-01    5.55e-01    2.75e-01    2.75e-01
+Req:     2.59e+00    1.24e+03    1.24e+03    6.23e+07    6.25e+07
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u3:m2     d:u3:m1     d:u3:4      d:u3:3     d:u2:_d1
+Model:    u3:dx       u3:dx       u3:dx       u3:dx    u2:djfex140
+Id:     -5.80e-13    3.71e-05   -4.04e-12   -2.62e-12   -2.50e-12
+Vd:     -5.70e-01    5.70e-01   -4.03e+00   -2.61e+00   -1.50e+00
+Req:     1.00e+12    6.97e+02    1.00e+12    1.00e+12    9.71e+11
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    6.32e-14
+
+Name:   d:u1:_d1
+Model: u1:djfex140
+Id:     -2.50e-12
+Vd:     -1.50e+00
+Req:     9.71e+11
+CAP:     6.32e-14
+
+                        --- Bipolar Transistors ---
+Name:     q:u3:3      q:u3:2      q:u3:4      q:u3:1        q1
+Model:     u3:qn       u3:qn       u3:qp       u3:qp      bc850b
+Ib:       1.07e-06    1.06e-06   -1.05e-06   -1.06e-06    3.64e-05
+Ic:       1.07e-04    1.06e-04   -1.05e-04   -1.06e-04    1.06e-02
+Vbe:      7.16e-01    7.16e-01   -7.16e-01   -7.16e-01    7.08e-01
+Vbc:     -4.28e+00   -5.00e+00    4.29e+00    5.00e+00    4.00e-01
+Vce:      5.00e+00    5.71e+00   -5.00e+00   -5.72e+00    3.07e-01
+BetaDC:   1.00e+02    1.00e+02    1.00e+02    1.00e+02    2.91e+02
+Gm:       4.12e-03    4.09e-03    4.07e-03    4.09e-03    3.82e-01
+Rpi:      2.43e+04    2.44e+04    2.46e+04    2.44e+04    7.46e+02
+Rx:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    5.60e-01
+Ro:       2.08e+86    2.20e+98    2.33e+86    2.46e+98    6.87e+03
+Cbe:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    2.66e-10
+Cbc:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    6.04e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   1.00e+02    1.00e+02    1.00e+02    1.00e+02    2.85e+02
+Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    2.24e+08
+
+                        --- JFET Transistors ---
+Name:   j:u2:_j1    j:u1:_j1
+Model: u2:njfex140 u1:njfex140
+Id:      5.30e-03    5.30e-03
+Vgs:    -3.26e-01   -3.26e-01
+Vds:     1.17e+00    1.17e+00
+Gm:      1.75e-02    1.75e-02
+Gds:     6.23e-05    6.23e-05
+Cgs:     8.01e-12    8.01e-12
+Cgd:     2.42e-12    2.42e-12
+
+
+
+Date: Wed Jun 07 12:01:02 2023
+Total elapsed time: 10.012 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 29823
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 546
+matrix size = 666
+fillins = 2154
+solver = Normal
+Matrix Compiler1:    9629 opcodes  34.7/[16.3]/17.4
+Matrix Compiler2: 95.88 KB object code size  11.5/14.0/[8.5]
+

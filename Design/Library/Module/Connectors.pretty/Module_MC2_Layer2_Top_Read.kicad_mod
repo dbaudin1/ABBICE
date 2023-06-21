@@ -1,0 +1,15 @@
+(footprint "Module_MC2_Layer2_Top_Read" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr smd)
+  (fp_text reference "REF**" (at 2.747 -0.796 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 4f1b1d06-4c24-48f0-a725-a95b4ab2e049)
+  )
+  (fp_text value "Module_MC2_Layer2_Top_Read" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 7efcb7a0-5a2c-4b48-b38e-6654e80fc090)
+  )
+  (pad "1" smd roundrect (at 0.062 -0.125 180) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp bc31ed5a-5ead-410e-8f46-2ff314a940d4))
+  (pad "2" smd roundrect (at 0.312 -0.125 180) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 11da5c00-8ccf-4896-b9bd-94fbedb04a07))
+)

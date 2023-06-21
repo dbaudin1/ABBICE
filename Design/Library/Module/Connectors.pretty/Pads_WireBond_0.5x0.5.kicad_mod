@@ -1,0 +1,15 @@
+(footprint "Pads_WireBond_0.5x0.5" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 62AAF9A9)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 2.54 -0.34 90) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 0c3dceba-7c95-4b3d-b590-0eb581444beb)
+  )
+  (fp_text value "Pads_WireBond_0.5x0.5" (at 1.54 -0.34 90) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 965308c8-e014-459a-b9db-b8493a601c62)
+  )
+  (pad "1" smd rect (at 0 -0.51) (size 0.5 0.5) (layers "F.Cu" "F.Mask") (tstamp b1c649b1-f44d-46c7-9dea-818e75a1b87e))
+  (pad "2" smd rect (at 0 0.49) (size 0.5 0.5) (layers "F.Cu" "F.Mask") (tstamp f3628265-0155-43e2-a467-c40ff783e265))
+)

@@ -1,0 +1,18 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 3f13a491-6a6f-46b2-b6cc-0bc247a05e29)
+
+  (paper "A4")
+
+  (title_block
+    (date "2023-06-02")
+    (rev "1.0")
+    (company "CEA")
+    (comment 1 "Acquisition system for bolometer readout")
+    (comment 2 "Author: David Baudin")
+  )
+
+  (lib_symbols
+  )
+
+)

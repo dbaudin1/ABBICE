@@ -1,0 +1,16 @@
+(footprint "Fischer_Pads" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr smd)
+  (fp_text reference "REF**" (at 5.494 -8.213 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 85d5e135-ee76-4733-a0d0-90e22b377cf6)
+  )
+  (fp_text value "Fischer_Pads" (at 8.283 -6.718 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 792b4737-ca6f-4e9c-90f4-964dda7829c0)
+  )
+  (pad "1" smd rect (at 1.039 -1.586) (size 1 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5603e09d-7649-4abb-8330-aa409b728f82))
+  (pad "2" smd rect (at -0.961 -1.586) (size 1 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp da559323-f738-4a31-8132-3d2fd294d395))
+  (pad "3" smd rect (at 0.039 -5.587) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 49685d57-ac8f-42df-a6a7-b4dd71289378))
+)

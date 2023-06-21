@@ -1,0 +1,29 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BF545B
+D 15mA Idss, 30V Vgs, N-Channel JFET, SOT-23
+K N-Channel FET Transistor Low Voltage
+F https://www.nxp.com/docs/en/data-sheet/BF545A_BF545B_BF545C.pdf
+$ENDCMP
+#
+$CMP BF545C
+D 25mA Idss, 30V Vgs, N-Channel JFET, SOT-23
+K N-Channel FET Transistor Low Voltage
+F https://www.nxp.com/docs/en/data-sheet/BF545A_BF545B_BF545C.pdf
+$ENDCMP
+#
+$CMP IF1320
+D 5mA Idss, 30V Vgs, N-Channel JFET, SOT-23
+K N-Channel FET Transistor Low Voltage
+F https://www.nxp.com/docs/en/data-sheet/BF545A_BF545B_BF545C.pdf
+$ENDCMP
+#
+$CMP MAX3001
+F https://pdfserv.maximintegrated.com/package_dwgs/21-0066.PDF
+$ENDCMP
+#
+$CMP MT41J128M16JT-125_K_TR
+F https://www.mouser.com/datasheet/2/671/2Gb_DDR3_SDRAM-1283766.pdf
+$ENDCMP
+#
+#End Doc Library

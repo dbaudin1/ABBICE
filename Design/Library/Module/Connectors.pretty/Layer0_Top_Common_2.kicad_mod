@@ -1,0 +1,17 @@
+(footprint "Layer0_Top_Common_2" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr smd)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 6056a558-2c86-4e7b-bafd-0330646df0db)
+  )
+  (fp_text value "Layer0_Top_Common_2" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp b21ecfda-6c3a-4c3f-bfa7-04f18a8deb07)
+  )
+  (pad "1" smd roundrect (at 0.04 -0.127) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 34bf1cd7-268f-4c88-a765-dc5e8a05ce34))
+  (pad "2" smd roundrect (at 0.29 -0.127) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp e2b87c84-1ef0-4b93-a2b2-94e87e0496d0))
+  (pad "3" smd roundrect (at 0.54 -0.127) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 73cf795a-10c1-4ed4-a3c7-62a7cb76c80a))
+  (pad "4" smd roundrect (at 0.79 -0.127) (size 0.125 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 53c87883-beac-419e-a9e1-ea8fac51a7a9))
+)
