@@ -1,0 +1,143 @@
+* AD8620 SPICE Macro-model
+* Description: Amplifier
+* Generic Desc: 10/26V, JFET, OP, Low Ib, Precision, 2X
+* Developed by: ADSJ
+* Revision History: 08/10/2012 - Updated to new header style
+* 1.4 HH, ADSJ Apps – 2/2011 Fixed E3 Syntax; CMRR mod, en, Isy
+* 1.3 HH, ADSJ Apps – Corrected CCM and CDM  7/2010
+* 1.2 TW, fixed power supply current polarity
+* 1.1 HH, ADSJ Apps – Added Cdiff, Cin1, and Cin2                   
+* 1.0 SB, ADSiV apps 
+* Copyright 2010, 2011, 2012 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model 
+* indicates your acceptance of the terms and provisions in the License Statement.
+*
+* BEGIN Notes: 
+*
+* Not Modeled:
+*    
+* Parameters modeled include: 
+* This model simulates typical value parameters
+* only at Vs=±13V at T=25°C
+*
+* END Notes
+*
+* Node assignments
+*                non-inverting input
+*                | inverting input
+*                | | positive supply
+*                | | |  negative supply
+*                | | |  |  output
+*                | | |  |  |
+.SUBCKT AD8620   1 2 99 50 30
+*
+* INPUT STAGE
+*
+R3   5  50  1.464E3
+R4   6  50  1.464E3
+Cdiff  1   2    5.87E-12
+Cin1  1   50    14.7E-12
+Cin2  2   50    14.7E-12
+I1   99  4    2.733E-3
+IOS  1   2    1.75E-12
+EOS  7  1    POLY(3)  (17, 98) (73, 98)(42,0)  45E-6  1 1 1 
+V10   4     55 DC 3.8
+D10  55   99 DX
+GN1  0   1    45  0  1E-6
+GN2  0   2    48  0  1E-6
+J1   5   2    4   JX
+J2   6   7    4   JX
+GB1  2  50    POLY(3) (4, 2) (5, 2) (50, 2) 0 1E-12 1E-12 1E-12
+GB2  7  50    POLY(3) (4, 7) (6, 7) (50, 7) 0 1E-12 1E-12 1E-12
+*  
+* SECOND STAGE & POLE AT 135 Hz
+*
+R5   9  98   4.72E4
+C3   9  98   2.4E-8
+G1   98  9    5  6 3.31E-1
+V2   8  98    11.2
+D1   9   8    DX
+V3   98 10    11.4
+D2   10  9    DX
+*
+* Second pole 
+*
+R13  18 98     1E3
+C9   18 98     2.4E-12
+G5   98 18 9  98  1E-3
+*
+* COMMON-MODE GAIN NETWORK 
+*
+E3   16 98     POLY(2) (1,98)  (2,98) 0 1.628E-03 1.628E-03
+R11  16 17     5.184E+00
+R12  17 98     8.842E-03
+C8   17 16     1.00E-06
+*
+* PSRR
+*
+EPSY 72 98 POLY(1) (99,50) 0 1.918E-01
+RPS3 72 73 1.061E+03
+RPS4 73 98 3.183E-02
+CPS3 72 73 1E-06
+*
+* VOLTAGE NOISE GENERATOR
+*
+VN1  41  0    DC 1
+DN1  41 42    DEN
+DN2  42 43    DEN
+VN2  0  43    DC 1
+*
+* CURRENT NOISE GENERATOR
+*
+VN3  44  0    DC 1
+DN3  44 45    DIN
+DN4  45 46    DIN
+VN4  0  46    DC 1
+*
+* CURRENT NOISE GENERATOR
+*
+VN5  47  0    DC 1
+DN5  47 48    DIN
+DN6  48 49    DIN
+VN6  0  49    DC 1
+*  
+R14  24 99     500E3
+R15  24 50     500E3
+EREF 98  0    24  0   1
+GSY  99 50 POLY(1) (99 50)  -0.36E-3 15E-06
+*
+* OUTPUT STAGE
+*
+R16  29 99     50
+R17  29 50     50
+L1   29 30     1E-8
+G6   27 50     18 29  2.000E-02
+G7   28 50     29 18  2.000E-02
+G8   29 99     99 18  2.000E-02
+G9   50 29     18 50  2.000E-02
+V4   25 29     0.675
+V5   29 26     0.675
+D3   18 25     DX
+D4   26 18     DX
+D5   99 27     DX
+D6   99 28     DX
+D7   50 27     DY
+D8   50 28     DY
+F1   29  0     V4  1
+F2   0  29     V5  1
+*
+* MODELS USED
+*
+.MODEL JX PJF(BETA=1.4E-2 VTO=-1.000  IS=20E-12 RD=0
++ RS=0 CGD=1E-12 CGS=1E-12)
+.MODEL DX   D(IS=1E-15 RS=0 CJO=1E-12)
+.MODEL DY   D(IS=1E-15 BV=50 RS=10 CJO=1E-12)
+.MODEL DEN  D(IS=1E-12 RS=3500, KF=1.75E-14 AF=1)
+.MODEL DIN  D(IS=1E-12 RS=12, KF=1.0E-16 AF=1)
+.ENDS AD8620
+*
+
+
+
+

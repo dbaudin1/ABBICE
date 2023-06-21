@@ -1,0 +1,127 @@
+* AD4622 SPICE Macro-model             
+* Description: Amplifier
+* Generic Desc: 30V, JFET, OP, S SPLY, RRO
+* Developed by: DB / ADSJ
+* Revision History:
+* 1.0 (11/2015)
+* 2.0 (12/2017) 
+* 12/01/2017 - corrected pin order to standard by AR / ADGT
+* Copyright 2015 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+* 
+*
+* Notes: This model simulates typical values @ Vsy=±15V, T=25°C. 
+*        Ibias and Vos are static and will not vary with Vcm.
+*        Distortion is not modelled.
+*        (ada4622 DMod model)
+*
+* Usage:-
+
+*X1 3 2 7 4 6 ADA4622
+*   | | | | | 
+*   | | | | Output 
+*   | | | Negative Supply
+*   | | Positive Supply
+*   | Inverting Input
+*   Non-Inverting Input
+
+.SUBCKT ADA4622 3 2 7 4 6
+
+* Input Impedances
+
+I1 0 3 1.000E-012
+I2 0 2 1.000E-012
+R3 3 2 1.333E+013
+R4 3 0 2.000E+013
+R5 2 0 2.000E+013
+C1 3 0 1.800E-012
+C2 2 0 1.800E-012
+C3 3 2 4.000E-013
+
+* Preconditioning Gain Stage and Sum Node for
+* Transconductance Control and Noise Insertion
+
+G1 0 41 POLY(2) 3 2 60 63 0.000E+000 2.377E-003 1.947E-003
+
+* Limiting Section for Slew-Rate Control
+
+D5 41 43 DL
+V1 43 0 1.082E+002
+D6 42 41 DL
+V2 0 42 8.170E+001
+G2 41 0 41 0 1.0E-5
+E6 20 0 POLY(1) 41 0 0 1
++0 -6.562164E-006 0 -5.302485E-012
++0 3.817254E-016 0 -1.371241E-021
+
+.MODEL DL D IS=1E-18 EG=0.1 N=0.2
+
+* Second-Order Frequency Shaping
+
+R50 20 21 5
+C50 21 0 1.224E-009
+R52 21 23 35
+C51 23 0 5.350E-011
+R54 23 25 245
+C52 25 0 7.642E-012
+R56 25 27 1715
+C53 27 0 1.031E-012
+R58 27 40 12005
+C54 40 0 1.105E-013
+
+* Primary Gain Block and Dominant Pole/Zero
+
+G3 0 44 POLY(3) 45 6 40 0 0 54 0 -1.033E-003 1E-5 5E-4
+G4 44 0 44 0 1.981E-011
+C4 44 4 4.348E-013
+
+* Output Stage and Swing Limiting Network
+
+E2 46 0 POLY(1) 7 0 -1.178E+000 1.000E+002
+E3 47 0 POLY(1) 4 0 2.801E-001 1.000E+002
+D7 44 46 DL
+D8 47 44 DL
+G7 45 6 45 6 100
+E5 55 0 6 0 1.00E+002
+C5 55 50 4.348E-013
+R7 50 44 1.150E+005
+E4 53 0 45 6 2.863E+005
+V7 53 56 7.734E+001
+D9 56 54 DL
+V8 57 53 100.2
+D10 54 57 DL
+G5 54 0 54 0 9.1E-6
+G8 45 7 POLY(2) 7 0 0 44 0 2.500E-002 2.500E-004
+G9 45 4 POLY(2) 4 0 0 44 0 2.500E-002 2.500E-004
+R12 7 45 4.000E+001
+R13 4 45 4.000E+001
+G10 58 59 POLY(2) 0 45 44 0 0 2.500E-002 2.500E-004
+G11 51 0 51 0 100
+G12 52 0 52 0 100
+G13 4 7 POLY(2) 51 0 52 0 0 100 100
+D11 59 0 DX
+D12 51 59 DX
+D13 52 58 DX
+D14 58 0 DX
+R10 58 0 7.00E+003
+R11 59 0 7.00E+003
+
+.MODEL DX D IS=1E-14 EG=0.6
+
+* Quiescent Supply Current  c         
+
+I9 7 4 6.650E-004
+
+* Noise Modeling
+
+D60 60 0 DN1 1000
+I60 0 60 1E-3
+D63 63 0 DN2
+I63 0 63 1E-6
+
+.MODEL DN1 D IS=1E-16
+.MODEL DN2 D IS=1E-16 AF=1 KF=7.715E-018
+
+.ENDS ADA4622
