@@ -17,7 +17,6 @@
   )
 
 
-
   (sheet (at 172.72 80.01) (size 30.48 25.4) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
