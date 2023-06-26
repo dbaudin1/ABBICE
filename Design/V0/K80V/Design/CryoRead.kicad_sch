@@ -243,7 +243,7 @@
       (reference "U2") (unit 3) (value "AD8012") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/db3718c9-1d68-4816-a4a9-28e0f8d89405/b0caa596-3c9d-427a-b86f-80dca354ed03/682e544c-7203-44d4-a90d-e974c07e14e4"
-      (reference "U3") (unit 1) (value "LM4050AEM3-2.5+T") (footprint "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm")
+      (reference "U3") (unit 1) (value "LM4050AEM3-2.5+T") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/db3718c9-1d68-4816-a4a9-28e0f8d89405/b0caa596-3c9d-427a-b86f-80dca354ed03/679e4b8f-c603-45b5-9a3c-372cc64a5513"
       (reference "U4") (unit 1) (value "OPA828") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
@@ -258,7 +258,7 @@
       (reference "U5") (unit 1) (value "INA828") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/db3718c9-1d68-4816-a4a9-28e0f8d89405/b0caa596-3c9d-427a-b86f-80dca354ed03/eb04e80e-854c-4af6-8f5d-c02a53b731e4"
-      (reference "U6") (unit 1) (value "AD5752AREZ") (footprint "baclet_composants_np:AD5752AREZ")
+      (reference "U6") (unit 1) (value "AD5752AREZ") (footprint "RE_24_ADI")
     )
     (path "/db3718c9-1d68-4816-a4a9-28e0f8d89405/b0caa596-3c9d-427a-b86f-80dca354ed03/0d7b3ce5-0d5e-4c58-90b5-652cf04c13a4"
       (reference "U7") (unit 2) (value "ADA4807") (footprint "Package_SO:MSOP-8_3x3mm_P0.65mm")
